@@ -7,6 +7,7 @@ export const colors = {
 	gray: 'gray',
 	inputBg: 'hsl(240, 5.9%, 90%)',
 	light: 'hsl(0, 0%, 98%)',
+	mapBtnBg: 'hsl(161, 93.5%, 30.4%)',
 	rippleDark: 'hsl(240, 3.8%, 46.1%)',
 	white: '#fff'
 }

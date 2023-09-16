@@ -2,7 +2,8 @@ import { useFonts } from 'expo-font'
 // Icons
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass'
-library.add(faMagnifyingGlass)
+import { faMapLocationDot } from '@fortawesome/free-solid-svg-icons/faMapLocationDot'
+library.add(faMagnifyingGlass, faMapLocationDot)
 // Navigation
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'

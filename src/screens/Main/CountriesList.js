@@ -1,18 +1,13 @@
-import { FlatList, View, ActivityIndicator } from 'react-native'
+import { FlatList, View } from 'react-native'
 import { colors } from '../../styles/stylesVariables.js'
 // Components
+import Loading from '../../components/Loading'
 import Error from '../../components/Error'
 import NotFound from '../../components/NotFound'
 import ItemCard from './ItemCard'
 
 export default function CountriesList({ handleFetchData, status, listItems, styles, navigation }) {
-	if(status === 'loading') {
-		return (
-			<View style={styles.loadingContainer}>
-			  <ActivityIndicator size="large" color={colors.dark} />
-			</View>
-		)
-	}
+	if(status === 'loading') return <Loading size="large" color={colors.dark} />
 	
 	if(status === 'error') {
 		return (
