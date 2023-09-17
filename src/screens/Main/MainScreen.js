@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { StyleSheet, View } from 'react-native'
+import { StatusBar } from 'expo-status-bar'
 import axios from 'axios'
 import { colors } from '../../styles/stylesVariables.js'
 // Components
@@ -42,6 +43,7 @@ export default function MainScreen({ navigation }) {
 				navigation={navigation}
 				styles={styles}
 			/>
+			<StatusBar style="dark" />
 		</View>
 	)
 }

@@ -1,5 +1,6 @@
 import { useLayoutEffect } from 'react'
 import { StyleSheet, View, ScrollView, Text } from 'react-native'
+import { StatusBar } from 'expo-status-bar'
 import { colors } from '../../styles/stylesVariables.js'
 import formatCountryInfo from '../../utils/formatCountryInfo.js'
 // Components
@@ -42,6 +43,10 @@ export default function InfoScreen({ route, navigation }) {
 					styles={styles}
 				/>
 			</View>
+			<StatusBar
+				style="light"
+				backgroundColor={colors.dark}
+			/>
 		</ScrollView>
 	)
 }
