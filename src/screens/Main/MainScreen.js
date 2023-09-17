@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, View, StatusBar as RnStatusBar } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import axios from 'axios'
 import { colors } from '../../styles/stylesVariables.js'
@@ -43,7 +43,7 @@ export default function MainScreen({ navigation }) {
 				navigation={navigation}
 				styles={styles}
 			/>
-			<StatusBar style="dark" />
+			<StatusBar style="dark" backgroundColor={colors.white} />
 		</View>
 	)
 }
@@ -92,7 +92,8 @@ const styles = StyleSheet.create({
 	},
 	mainContainer: {
 		backgroundColor: colors.white,
-		flex: 1
+		flex: 1,
+		marginTop: RnStatusBar.currentHeight
 	},
 	searchArea: {
 		borderColor: colors.borderColor,
